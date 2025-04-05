@@ -3,6 +3,7 @@
   import phoneCover from "assets/phone_cover.png";
 </script>
 
+
 <section class="hero">
   <div class="hero-showcase text-center bold">
     <h1 class="purple">MOVE TO</h1>
@@ -25,6 +26,30 @@
     </p>
   </div>
 </section>
+
+<!-- <section class="flex h-screen overflow-hidden">
+	<div class="relative w-1/2 pt-25 px-4 bg-[linear-gradient(135deg,#e2cbff,#e2cbff_25%,#deeaff_50%,#ece5ff_75%,#927bce)] text-center font-bold">
+		<h1 class="text-purple-700">MOVE TO</h1>
+		<h1 class="text-purple-700 mb-2">SPAIN</h1>
+    <h4 class="italic font-semibold">
+      There's no need to make the same mistakes I made.
+    </h4>
+    <img class="absolute right-[2%] bottom-0 w-[64%] translate-y-[30%]" src={bookCover} alt="" />
+    <img class="absolute w-[35%] bottom-0 right-[52%] translate-y-[25%]" src={phoneCover} alt="" />
+	</div>
+
+	<div class="py-25 px-[5%] w-1/2  bg-black text-white text-center">
+		<h1>THIS EBOOK WILL</h1>
+    <h1>SAVE YOU MONEY,</h1>
+    <h1 class="mb-9">TIME & NERVES</h1>
+    <p class="text-gray-50">
+      I moved to Spain seven years ago. The process was painful and difficult. I
+      learned most things the hard way: finding a job, getting a visa,
+      calculating my cost of living, choosing an apartment. That's why I wrote
+      this e-book, to tell you how I did it. No bullshit, no stress.
+    </p>
+	</div>
+</section> -->
 
 <style>
   .hero {
