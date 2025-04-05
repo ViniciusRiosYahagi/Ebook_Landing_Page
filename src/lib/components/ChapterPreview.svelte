@@ -76,7 +76,7 @@
 <style>
   .chapter-preview {
     padding: 80px 0;
-    margin-left: 12vw;
+    margin-left: 20vw;
     margin-right: 20vw;
     max-width: 1150px;
   }
