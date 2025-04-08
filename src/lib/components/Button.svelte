@@ -1,22 +1,27 @@
 <script>
-  let { children, ...props } = $props();
-
   import { loadStripe } from "@stripe/stripe-js";
   import { PUBLIC_STRIPE_KEY } from "$env/static/public";
+  import { goto } from "$app/navigation";
+
+  let { children, ...props } = $props();
 
   async function onclick() {
-    const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
+    try {
+      const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
 
-    const response = await fetch("/api/checkout", {
+      const response = await fetch("/api/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-    });
-    const { sessionId } = await response.json();
-    console.log({sessionId})
+      });
+      const { sessionId } = await response.json();
 
-    await stripe.redirectToCheckout({ sessionId });
+      await stripe.redirectToCheckout({ sessionId });
+    } catch(error) {
+      
+      goto("/checkout/failure")
+    }
   }
 </script>
 
