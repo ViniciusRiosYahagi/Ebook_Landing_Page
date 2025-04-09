@@ -9,6 +9,10 @@
 		try {
 			const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
 
+			if (!stripe) {
+				throw new Error('Stripe failed to load');
+			}
+
 			const response = await fetch('/api/checkout', {
 				method: 'POST',
 				headers: {
@@ -17,7 +21,7 @@
 			});
 			const { sessionId }: { sessionId: string } = await response.json();
 
-			await stripe?.redirectToCheckout({ sessionId });
+			await stripe.redirectToCheckout({ sessionId });
 		} catch (error) {
 			goto('/checkout/failure');
 		}
