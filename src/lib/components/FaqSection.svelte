@@ -1,5 +1,5 @@
-<script lang="ts">
-	import { FaqItem, Button } from 'components';
+<script>
+  	import { Button, FaqItem } from "$lib/index.js";
 
 	const faqs = [
 		{
@@ -31,15 +31,13 @@
 
 	let questionCurrentlyExplained = $state();
 
-	function onClick(index: number) {
+	function onClick(index) {
 		if (questionCurrentlyExplained === index) {
 			questionCurrentlyExplained = -1;
 		} else {
 			questionCurrentlyExplained = index;
 		}
 	}
-
-	$inspect(questionCurrentlyExplained);
 </script>
 
 <section class="landing-page-section">

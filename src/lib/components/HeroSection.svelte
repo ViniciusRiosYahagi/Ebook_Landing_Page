@@ -1,8 +1,9 @@
-<script lang="ts">
-	import bookCover from 'assets/book_cover.png';
-	import phoneCover from 'assets/phone_cover.png';
-	import { Button } from 'components';
-
+<script>
+	import bookCover from '$assets/book_cover.png';
+	import phoneCover from '$assets/phone_cover.png';
+  	import { Button } from '$lib/index.js';
+ 	
+	
 	let { children } = $props();
 </script>
 

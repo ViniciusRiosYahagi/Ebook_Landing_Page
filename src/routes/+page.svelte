@@ -1,11 +1,8 @@
 <script>
-    // @ts-ignore
-    import { HeroSection, ChapterPreview, AuthorSection, FaqSection } from "components";
-  </script>
+  import { AuthorSection, ChapterPreview, FaqSection, HeroSection } from "$lib/index.js";
+</script>
   
-  <HeroSection />
-  <ChapterPreview />
-  <AuthorSection />
-  <FaqSection />
-  
-  
+<HeroSection />
+<ChapterPreview />
+<AuthorSection />
+<FaqSection />

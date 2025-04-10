@@ -1,5 +1,5 @@
-<script lang="ts">
-	import authorPic from 'assets/profile_pic.jpg';
+<script>
+	import authorPic from '$assets/profile_pic.jpg';
 </script>
 
 <section class="landing-page-section">

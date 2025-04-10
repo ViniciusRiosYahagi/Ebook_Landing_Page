@@ -1,6 +1,6 @@
-<script lang="ts">
-	import chevronDown from 'assets/icons/chevron-down.svg';
-
+<script>
+	import chevronDown from '$assets/icons/chevron-down.svg';
+	
 	let { faq, isExpanded, ...props } = $props();
 </script>
 

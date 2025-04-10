@@ -1,5 +1,5 @@
 <script>
-	import { HeroSection } from 'components';
+	import { HeroSection } from '$lib/index.js';
 </script>
 
 <HeroSection>

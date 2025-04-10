@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { loadStripe } from '@stripe/stripe-js';
 	import { PUBLIC_STRIPE_KEY } from '$env/static/public';
 	import { goto } from '$app/navigation';
@@ -19,7 +19,7 @@
 					'Content-Type': 'application/json'
 				}
 			});
-			const { sessionId }: { sessionId: string } = await response.json();
+			const { sessionId } = await response.json();
 
 			await stripe.redirectToCheckout({ sessionId });
 		} catch (error) {

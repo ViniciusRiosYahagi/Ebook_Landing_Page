@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	const chapters = [
 		{
 			number: 1,
@@ -37,13 +37,9 @@
 	let selectedChapterNumber = $state(1);
 
 	let selectedChapter = $derived(
-		chapters.find((chapter) => chapter.number === selectedChapterNumber) || {
-			strapline: '',
-			excerpt: ''
-		}
-	);
+		chapters.find((chapter) => chapter.number === selectedChapterNumber));
 
-	function selectChapter(chapter: App.Chapters) {
+	function selectChapter(chapter) {
 		selectedChapterNumber = chapter.number;
 	}
 </script>
